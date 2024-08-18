@@ -5,9 +5,92 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 5px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.viajes{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+ 
+}
+
+.lugar{
+  border: 4px black solid;
+  padding: 5px 5px;
+  background-color: rgb(27, 23, 23);;
+  color: white;
+}
+
+.lugar input{
+  width: 150px; /* Ancho del botón */
+  height: 50px; /* Altura del botón */
+}
+
+.seleccion{
+  display: inline-flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.button{
+  background-color: rgb(14, 98, 207);
+  border: 2px solid blue;
+  text-decoration: none;
+  color: white;
+  height: 20px;
+  padding: 7px 7px;
+  
+}
+
+.comprobar{
+  color: green;
+}
+
+.pregunta{
+  display: flex;
+  
+}
+
+.aviso{
+  color: white;
+  background-color: red;
+  padding: 5px 5px;
+  width: 15%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.lugar-seleccionado {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px; /* Puedes ajustar este valor según tus necesidades */
+  border: 2px solid gray;
+  margin: 1px;
+}
+
+.lugar-seleccionado h2,
+.lugar-seleccionado h3,
+.lugar-seleccionado img {
+  margin-bottom: 10px; /* Espacio entre los elementos */
+}
+
+.lugar-seleccionado img {
+  max-width: 100%; /* Ajusta la imagen para que no se desborde */
+  height: auto;
+}
+
+
